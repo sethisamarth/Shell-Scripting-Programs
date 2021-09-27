@@ -1,0 +1,23 @@
+#! /bin/bash -x
+#part a
+no_of_inches=42
+
+oneft=12
+
+c=$( echo $no_of_inches $oneft | awk '{ print $1/$2 }' )
+
+
+echo "42 inchs in feet is :$c"
+
+#part b
+a=60
+b=40
+echo "length of plot is $a"
+echo "breath of plot is $b"
+c=$(( $a*$b))
+echo "Area of the plot is $c sqft"
+
+#part c
+d=$(( $c*25 ))
+echo "Area of 25 such plots is $d sqft"
+
