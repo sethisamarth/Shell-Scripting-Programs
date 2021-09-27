@@ -1,0 +1,12 @@
+#! /bin/bash -x
+sum=o
+for ((i=0;i<5;i++))
+do
+
+   array[i]="$((RANDOM%10+10))"
+   sum=$(( sum +  array[i] ))
+done
+
+echo "${array[@]}"
+echo sum:"$sum"
+echo avg:"$((sum/5 | bc -l))"
