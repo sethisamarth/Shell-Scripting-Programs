@@ -1,0 +1,12 @@
+#! /bin/bash -x
+
+read -p "Enter the value of n :" n
+i=o
+sum=0
+while ((  $i<=n && $sum <256  ))
+do
+     echo  $((2**i))
+     sum=$(( sum+ 2**i ))
+      ((i++))
+done
+
