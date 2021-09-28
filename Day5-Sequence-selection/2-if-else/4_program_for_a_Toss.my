@@ -1,0 +1,13 @@
+#! /bin/bash -x
+
+coincheck=$((RANDOM%2))
+
+head=1
+
+
+if [ $head -eq $coincheck ]
+then
+     echo "its head"
+else
+     echo " its tail "
+fi
